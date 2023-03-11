@@ -1,0 +1,16 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.chatContainer {
+  display: flex;
+  flex-direction: row;
+}
+.chatSidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessage {
+  display: flex;
+  flex-direction: column;
+}

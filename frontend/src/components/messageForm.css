@@ -1,0 +1,147 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.messgaeFormContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7vw;
+  padding-top: 4vh;
+}
+.notLoginMsg {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+  height: 10vh;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.messageOutput {
+  height: 78vh;
+  width: 57vw;
+  border: 1px solid lightgray;
+  overflow-y: scroll;
+  /* border: 0.5px solid rgb(201, 190, 190); */
+}
+.roomInfo {
+  background-color: #d0efff;
+  color: #31708f;
+  padding: 1.2vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  justify-content: center;
+}
+.pvtMsgInfo {
+  background-color: #d0efff;
+  color: #31708f;
+  padding: 1.3vh;
+  margin-bottom: 1vh;
+  padding-top: 3vh;
+  text-align: center;
+  justify-content: center;
+}
+.conversation-profile-pic {
+  border-radius: 50%;
+  height: 6vh;
+  width: 3vw;
+  margin-right: 1vw;
+}
+.MsgGroupByDate {
+  padding: 1vh;
+  text-align: center;
+  background-color: #d0efff;
+  border-color: #bce8f1;
+  color: #31708f;
+  width: 10vw;
+  margin-left: 21vw;
+  font-size: 1.2vw;
+}
+.innerMsg {
+  font-size: 1vw;
+  padding: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  border-radius: 1vw;
+  background-color: #d1e7dd;
+  text-align: left;
+  width: 25vw;
+  /* height: 23vh; */
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+}
+.outgoingMessage .innerMsg {
+  background-color: #ffdab9;
+}
+.outgoingMessage {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1vw;
+}
+.msgSenderDetails {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5vw;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.msgSenderDetails img {
+  border-radius: 50%;
+  height: 4vh;
+  width: 2.5vw;
+  margin-right: 1vw;
+}
+.msgContent {
+  display: flex;
+  flex-direction: row;
+}
+.msgContent p {
+  font-size: 1rem;
+  margin-left: 0.5vw;
+  margin-right: 3vw;
+  font-weight: 500;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  font-weight: 300;
+}
+.messageOutputNotLogin {
+  height: 68vh;
+  width: 51vw;
+  border: 0.5px solid rgb(201, 190, 190);
+}
+.messgaeFormContainer form {
+  display: flex;
+  flex-direction: row;
+}
+.msgForm {
+  height: 7vh;
+}
+.msgForm input {
+  border-radius: 0.2em;
+  width: 53vw;
+  margin-top: 0.5vh;
+  border: 2px solid #dddfe2;
+  padding-left: 0.5em;
+}
+.msgFormbtn {
+  background-color: orange;
+  margin-top: 0.5vh;
+  width: 3vw;
+  margin-left: 1vw;
+  border: none;
+  border-radius: 0.2em;
+}
+.msgFormbtn:hover {
+  background-color: rgb(255, 179, 37);
+}
+.paperPlaneMsg {
+  color: white;
+}

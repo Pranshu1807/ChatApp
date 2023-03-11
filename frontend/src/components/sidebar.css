@@ -1,0 +1,79 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  /* width: 35vw; */
+  padding-left: 6vw;
+  padding-top: 4vh;
+}
+.notloginSidebar {
+  width: 25vw;
+}
+.rooms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+  border-top: 0.1px solid rgb(201, 190, 190);
+}
+.members {
+  margin-left: 1vw;
+  border-top: 0.1px solid rgb(201, 190, 190);
+}
+.list {
+  border: 0.1px solid rgb(201, 190, 190);
+  /* margin: 0.2px; */
+  border-top: 0px;
+  width: 25vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  cursor: pointer;
+}
+.membersList {
+  border: 0.1px solid rgb(201, 190, 190);
+  display: flex;
+  flex-direction: row;
+  border-top: 0px;
+  width: 25vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 0.5vh;
+  cursor: pointer;
+  list-style: none;
+}
+.memberDP img {
+  height: 4vh;
+  width: 6vh;
+  border-radius: 50%;
+}
+.memberName{
+  padding-left: 0.5vw;
+}
+.sidebar-online-status {
+  color: green;
+}
+
+.sidebar-offline-status {
+  color: #e3b505;
+}
+
+.sidebar-offline-status,
+.sidebar-online-status {
+  font-size: 11px;
+  z-index: 99;
+  bottom: 0;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+.activeS {
+  background-color: #3565be;
+  color: white;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

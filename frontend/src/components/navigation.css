@@ -1,0 +1,30 @@
+.logo img {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.navDP {
+  height: 5vh;
+  width: 3vw;
+  margin-right: 0.7vw;
+  border-radius: 50%;
+}
+#basic-nav-dropdown {
+  margin-left: 0.5vw;
+}
+.logoutBtn {
+  color: white;
+  border: none;
+  border-radius: 0.2em;
+  background-color: rgba(204, 1, 1, 0.897);
+  height: 4.5vh;
+  width: 6vw;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  background-color: rgba(255, 0, 0, 0.897);
+}

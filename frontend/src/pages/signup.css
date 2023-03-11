@@ -1,0 +1,70 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.signupTop {
+  margin-left: 6em;
+}
+.dp {
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+  border: 2px solid rgba(0, 0, 0, 0.562);
+  align-items: center;
+  margin-left: 5em;
+}
+.upload_sign {
+  margin-top: 2em;
+  cursor: pointer;
+}
+.signupContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.signupContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.signupContent {
+  display: flex;
+  flex-direction: column;
+}
+.signup__bg {
+  background-image: url(https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lc3NhZ2UlMjBhcHB8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
+  height: 91.5vh;
+  width: 35vw;
+  margin-left: 8em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.formText {
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.signupContainer input {
+  margin-bottom: 0.3em;
+  width: 32vw;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.4em;
+  border: 2px solid #dddfe2;
+  color: #1d2129;
+}
+.signupbtn {
+  width: 10em;
+  height: 2.2em;
+  background-color: rgb(21, 105, 201);
+  color: white;
+  border: none;
+  border-radius: 0.2em;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+.signupbtn:hover {
+  background-color: rgb(47, 143, 252);
+}
