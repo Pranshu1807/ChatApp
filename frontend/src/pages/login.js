@@ -14,16 +14,16 @@ const Login = () => {
   async function handleLogin(e) {
     e.preventDefault();
     const user = { email, password };
-    const res = await axios
-      .post("http://localhost:5000/users/login", user)
-      .catch((err) => {
-        console.log(err);
-      });
     // const res = await axios
-    //   .post("https://chat-app-new-pied.vercel.app/users/login", user)
+    //   .post("http://localhost:5000/users/login", user)
     //   .catch((err) => {
     //     console.log(err);
     //   });
+    const res = await axios
+      .post("https://chat-app-jet-two.vercel.app/users/login", user)
+      .catch((err) => {
+        console.log(err);
+      });
     if (res) {
       if (res.data.message === "Login Succesfull") {
         localStorage.setItem("profile", JSON.stringify(res.data.result));

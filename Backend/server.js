@@ -16,8 +16,8 @@ app.use("/users", userRoutes);
 app.get("/", (req, res) => {
   res.send("working fine");
 });
-// const server = require("https").createServer(app);
-const server = require("http").createServer(app);
+const server = require("https").createServer(app);
+// const server = require("http").createServer(app);
 const PORT = 5000;
 // const io = require("socket.io")(server, {
 //   cors: {
