@@ -33,7 +33,7 @@ function NavigationBar() {
       newMessages,
     };
     // const res = await axios
-    //   .post("https://chat-app-jet-two.vercel.app/logout", userr)
+    //   .post("https://chat-app-ecru-theta.vercel.app/logout", userr)
     //   .catch((err) => {
     //     console.log(err);
     //   });

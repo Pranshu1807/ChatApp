@@ -55,7 +55,7 @@ const Signup = () => {
         }
       });
     // const res = await axios
-    //   .post("https://chat-app-jet-two.vercel.app/users/signup", user)
+    //   .post("https://chat-app-ecru-theta.vercel.app/users/signup", user)
     //   .catch((err) => {
     //     if (err.response.data.code === 11000) {
     //       alert("User already exists");

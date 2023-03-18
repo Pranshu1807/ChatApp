@@ -20,7 +20,7 @@ const Login = () => {
         console.log(err);
       });
     // const res = await axios
-    //   .post("https://chat-app-jet-two.vercel.app/users/login", user)
+    //   .post("https://chat-app-ecru-theta.vercel.app/users/login", user)
     //   .catch((err) => {
     //     console.log(err);
     //   });

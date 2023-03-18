@@ -66,7 +66,7 @@ function Sidebar() {
   }
   // async function getRooms() {
   //   const res = await axios
-  //     .get("https://chat-app-jet-two.vercel.app/rooms")
+  //     .get("https://chat-app-ecru-theta.vercel.app/rooms")
   //     .catch((err) => {
   //       console.log(err.response);
   //     });

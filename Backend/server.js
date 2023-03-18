@@ -16,31 +16,18 @@ app.use("/users", userRoutes);
 app.get("/", (req, res) => {
   res.send("working fine");
 });
-// const server = require("https").createServer(app);
-const server = require("http").createServer(app);
+const https = require("https");
+const path = require("path");
+const fs = require("fs");
+const server = https.createServer(
+  {
+    key: fs.readFileSync(path.join(__dirname, "cert", "key.pem")),
+    cert: fs.readFileSync(path.join(__dirname, "cert", "cert.pem")),
+  },
+  app
+);
+// const server = require("http").createServer(app);
 const PORT = 5000;
-// const io = require("socket.io")(server, {
-//   cors: {
-//     "Access-Control-Allow-Origin": "*",
-//     "Access-Control-Allow-Methods": ["GET", "POST", "DELETE", "PUT"],
-//     "Access-Control-Allow-Credentials": "true",
-//     "Access-Control-Allow-Headers": ["Origin", "Content-Type", "Accept"],
-//     origin: "http://localhost://3000",
-//     methods: ["GET", "POST", "DELETE", "PUT"],
-//   },
-// });
-// const io = require("socket.io")(server, {
-//   handlePreflightRequest: (req, res) => {
-//     const headers = {
-//       "Access-Control-Allow-Headers": "Content-Type, Authorization",
-//       "Access-Control-Allow-Origin": req.headers.origin, //or the specific origin you want to give access to,
-//       "Access-Control-Allow-Credentials": true,
-//       "Access-Control-Allow-Headers": ["Origin", "Content-Type", "Accept"],
-//     };
-//     res.writeHead(200, headers);
-//     res.end();
-//   },
-// });
 const io = require("socket.io")(server, {
   cors: {
     origin: "*",
