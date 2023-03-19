@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     const user = { email, password };
     const res = await axios
-      .post("https://localhost:5000/users/login", user)
+      .post("http://localhost:5000/users/login", user)
       .catch((err) => {
         console.log(err);
       });

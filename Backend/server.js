@@ -16,17 +16,17 @@ app.use("/users", userRoutes);
 app.get("/", (req, res) => {
   res.send("working fine");
 });
-const https = require("https");
-const path = require("path");
-const fs = require("fs");
-const server = https.createServer(
-  {
-    key: fs.readFileSync(path.join(__dirname, "cert", "key.pem")),
-    cert: fs.readFileSync(path.join(__dirname, "cert", "cert.pem")),
-  },
-  app
-);
-// const server = require("http").createServer(app);
+// const https = require("https");
+// const path = require("path");
+// const fs = require("fs");/
+// const server = https.createServer(
+//   {
+//     key: fs.readFileSync(path.join(__dirname, "cert", "key.pem")),
+//     cert: fs.readFileSync(path.join(__dirname, "cert", "cert.pem")),
+//   },
+//   app
+// );
+const server = require("http").createServer(app);
 const PORT = 5000;
 const io = require("socket.io")(server, {
   cors: {
