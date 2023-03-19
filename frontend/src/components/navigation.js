@@ -32,16 +32,16 @@ function NavigationBar() {
       _id: user.user._id,
       newMessages,
     };
-    // const res = await axios
-    //   .post("https://chat-app-ecru-theta.vercel.app/logout", userr)
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
     const res = await axios
-      .post("http://localhost:5000/logout", userr)
+      .post("https://chat-app-git-master-pranshu1807.vercel.app/logout", userr)
       .catch((err) => {
         console.log(err);
       });
+    // const res = await axios
+    //   .post("http://localhost:5000/logout", userr)
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
     setUser(null);
     localStorage.removeItem("profile");
     navigate("/");

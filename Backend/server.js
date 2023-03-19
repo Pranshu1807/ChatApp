@@ -18,10 +18,10 @@ app.get("/", (req, res) => {
 });
 // const https = require("https");
 // const path = require("path");
-// const fs = require("fs");/
+// // const fs = require("fs");
 // const server = https.createServer(
 //   {
-//     key: fs.readFileSync(path.join(__dirname, "cert", "key.pem")),
+//     key: fs.readFileSync("./cert/key.pem"),
 //     cert: fs.readFileSync(path.join(__dirname, "cert", "cert.pem")),
 //   },
 //   app
