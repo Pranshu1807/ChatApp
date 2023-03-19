@@ -34,6 +34,7 @@ const io = require("socket.io")(server, {
     // "Access-Control-Allow-Origin": "*",
     methods: ["GET", "POST"],
   },
+  transports: ["websocket"],
 });
 
 // const io = require("socket.io")(server, {

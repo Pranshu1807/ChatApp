@@ -55,7 +55,7 @@ const Signup = () => {
     //     }
     //   });
     const res = await axios
-      .post("https://chat-app-git-master-pranshu1807.vercel.app/signup", user)
+      .post(`${process.env.REACT_APP_URL}signup`, user)
       .catch((err) => {
         if (err.response.data.code === 11000) {
           alert("User already exists");

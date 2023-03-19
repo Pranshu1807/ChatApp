@@ -20,10 +20,7 @@ const Login = () => {
     //     console.log(err);
     //   });
     const res = await axios
-      .post(
-        "https://chat-app-git-master-pranshu1807.vercel.app/users/login",
-        user
-      )
+      .post(`${process.env.REACT_APP_URL}users/login`, user)
       .catch((err) => {
         console.log(err);
       });

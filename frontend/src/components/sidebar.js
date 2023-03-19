@@ -67,7 +67,7 @@ function Sidebar() {
   // }
   async function getRooms() {
     const res = await axios
-      .get("https://chat-app-git-master-pranshu1807.vercel.app/rooms")
+      .get(`${process.env.REACT_APP_URL}rooms`)
       .catch((err) => {
         console.log(err.response);
       });

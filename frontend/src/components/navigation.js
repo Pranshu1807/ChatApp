@@ -23,6 +23,7 @@ function NavigationBar() {
         handleLogout();
       }
     }
+    console.log(process.env.REACT_APP_URL);
   }, [location]);
   const navigate = useNavigate();
 
@@ -33,7 +34,7 @@ function NavigationBar() {
       newMessages,
     };
     const res = await axios
-      .post("https://chat-app-git-master-pranshu1807.vercel.app/logout", userr)
+      .post(`${process.env.REACT_APP_URL}logout`, userr)
       .catch((err) => {
         console.log(err);
       });
