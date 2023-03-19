@@ -21,6 +21,7 @@ function Sidebar() {
   } = useContext(AppContext);
 
   socket.off("new-user").on("new-user", (payload) => {
+    // console.log("1234");
     setMembers(payload);
   });
 
