@@ -38,7 +38,7 @@ function NavigationBar() {
     //     console.log(err);
     //   });
     const res = await axios
-      .post("http://localhost:5000/logout", userr)
+      .post("https://localhost:5000/logout", userr)
       .catch((err) => {
         console.log(err);
       });

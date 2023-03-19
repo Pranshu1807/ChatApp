@@ -59,7 +59,7 @@ function Sidebar() {
   }
 
   async function getRooms() {
-    const res = await axios.get("http://localhost:5000/rooms").catch((err) => {
+    const res = await axios.get("https://localhost:5000/rooms").catch((err) => {
       console.log(err.response);
     });
     setRooms(res.data);
