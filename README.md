@@ -1,1 +1,1 @@
-https://webchatapplication-907x.onrender.com
+https://chat-app-ebzg.vercel.app/
