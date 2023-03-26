@@ -45,15 +45,6 @@ const Signup = () => {
     }
     const url = await uploadImage(image);
     const user = { name, email, password, picture: url };
-    // const res = await axios
-    //   .post("http://localhost:5000/users/signup", user)
-    //   .catch((err) => {
-    //     if (err.response.data.code === 11000) {
-    //       alert("User already exists");
-    //     } else {
-    //       console.log(err.response);
-    //     }
-    //   });
     const res = await axios
       .post(`${process.env.REACT_APP_URL}signup`, user)
       .catch((err) => {

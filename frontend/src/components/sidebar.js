@@ -59,12 +59,6 @@ function Sidebar() {
     joinRoom(roomId, false);
   }
 
-  // async function getRooms() {
-  //   const res = await axios.get("http://localhost:5000/rooms").catch((err) => {
-  //     console.log(err.response);
-  //   });
-  //   setRooms(res.data);
-  // }
   async function getRooms() {
     const res = await axios
       .get(`${process.env.REACT_APP_URL}rooms`)
