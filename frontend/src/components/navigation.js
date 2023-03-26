@@ -23,7 +23,7 @@ function NavigationBar() {
         handleLogout();
       }
     }
-    console.log(process.env.REACT_APP_URL);
+    // console.log(process.env.REACT_APP_URL);
   }, [location]);
   const navigate = useNavigate();
 
